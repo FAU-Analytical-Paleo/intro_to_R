@@ -19,3 +19,49 @@ knitr::kable(
 ```
 
 You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+
+## Exercise 1 
+
+### R built-in functions... fun with R 
+
+R provides numerous built-in functions and variables. For each line below, type the test in the Console to see what happens. Is the result what you expect? Fill in the blanks with the screen output for the line. 
+```{r}
+#This is a comment -- no action is executed by the computer. 
+```
+
+Variables, constants, and simple calculations: 
+
+```{r Variables, constants, simple calculations}
+a <- 100 #Look at the Global Environment. A VARIABLE called a has been created
+
+a <- 101 #Look at the variable's value in the Global Environment
+b <- 99
+a/b            # __________________________
+x <- 2 
+y <- x^x       # __________________________
+
+z <- y^y       # __________________________
+
+```
+
+Built-in functions: 
+
+```{r Built-in functions}
+sqrt(x)       # ___________________________
+pi  # pi is a built-in variable in R 
+cos(pi)       # ___________________________
+
+abs(cos(pi))  # ___________________________
+
+# How can we make this line of code simpler? 
+#By assigning the answer to a variable! 
+
+x <- cos(pi)
+abs(x)      # __________________________
+
+exp(x)      # __________________________
+
+# In Math, how do you write exp(x)? _________________
+
+b <- (4*2)
+```
